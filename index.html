@@ -1074,9 +1074,16 @@
 
 <script>
     // ─── SPLASH SCREEN ───
-    setTimeout(function() {
-        document.getElementById('splash').classList.add('hidden');
-    }, 4000);
+  setTimeout(function() {
+    document.getElementById('splash').classList.add('hidden');
+
+    // Force scroll to home
+    const home = document.getElementById("home");
+    if(home){
+        home.scrollIntoView({behavior:"instant"});
+    }
+
+}, 4000);
 
     // ─── IFRAME HANDLERS ───
     function iframeLoaded(loaderId) {
@@ -1137,4 +1144,4 @@
 </body>
 </html>
 
-add this image
+
