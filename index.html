@@ -666,6 +666,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#freelance">Freelance</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -1036,6 +1037,51 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+
+<!-- FREELANCE -->
+<section id="freelance">
+    <div class="container">
+        <div class="section-label reveal">Freelance Work</div>
+        <h2 class="section-title reveal">Freelance Project</h2>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    <div class="preview-bar">
+                        <div class="preview-dot red"></div>
+                        <div class="preview-dot yellow"></div>
+                        <div class="preview-dot green"></div>
+                        <div class="preview-url">aditya-enterprises-sand.vercel.app</div>
+                    </div>
+                    <div class="preview-live-badge">LIVE</div>
+                    <div class="preview-loading" id="load-freelance-1">
+                        <div class="preview-loading-spinner"></div>
+                        <span>Loading preview…</span>
+                    </div>
+                    <div class="preview-iframe-wrap">
+                        <iframe src="https://aditya-enterprises-sand.vercel.app/" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"
+                            onload="iframeLoaded('load-freelance-1')"
+                            onerror="iframeFailed('load-freelance-1','fb-freelance-1')">
+                        </iframe>
+                    </div>
+                    <div class="preview-fallback" id="fb-freelance-1">
+                        <div class="preview-fallback-icon" style="background:rgba(56,189,248,0.12)">
+                            <i class="fas fa-briefcase" style="color:#38bdf8"></i>
+                        </div>
+                        <p>Aditya Enterprises<br><span style="color:var(--accent);font-size:10px">Click Live Demo ↓</span></p>
+                    </div>
+                    <div class="preview-overlay"></div>
+                </div>
+                <div class="proj-body">
+                    <h3>Aditya Enterprises Website</h3>
+                    <p>Freelance website delivered for client use with responsive design and production deployment.</p>
+                    <div class="proj-tech"><span>Freelance</span><span>Web Design</span><span>Vercel</span></div>
+                    <a href="https://aditya-enterprises-sand.vercel.app/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
