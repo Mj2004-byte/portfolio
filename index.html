@@ -364,7 +364,7 @@
 
         /* ─── SKILLS ─── */
         .skills { background: rgba(255,255,255,0.01); }
-        .skills-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1.5rem; }
+        .skills-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:1.5rem; }
         .skill-card {
             background: var(--card);
             border: 1px solid var(--border);
@@ -729,7 +729,16 @@
                     <span class="chip">LangChain</span><span class="chip">PoseNet</span>
                     <span class="chip">TensorFlow.js</span><span class="chip">Git & GitHub</span>
                 </div>
+
             </div>
+            <div class="skill-card reveal">
+    <h3><i class="fas fa-bolt"></i> Automation</h3>
+    <div class="skill-chips">
+        <span class="chip">n8n</span><span class="chip">Zapier</span>
+        <span class="chip">Make.com</span><span class="chip">Email Automation</span>
+        <span class="chip">AI Agents</span><span class="chip">Workflow Automation</span>
+    </div>
+</div>
         </div>
     </div>
 </section>
@@ -1039,6 +1048,127 @@
 
         </div>
     </div>
+    <!-- AUTOMATION -->
+<section id="automation">
+    <div class="container">
+        <div class="section-label reveal">AI Automation</div>
+        <h2 class="section-title reveal">Automation Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Automation Project 1: Email Automation -->
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    <div class="preview-bar">
+                        <div class="preview-dot red"></div>
+                        <div class="preview-dot yellow"></div>
+                        <div class="preview-dot green"></div>
+                        <div class="preview-url">email-automation-eta-three.vercel.app</div>
+                    </div>
+                    <div class="preview-live-badge">LIVE</div>
+                    <div class="preview-loading" id="load-automation-1">
+                        <div class="preview-loading-spinner"></div>
+                        <span>Loading preview…</span>
+                    </div>
+                    <div class="preview-iframe-wrap">
+                        <iframe src="https://email-automation-eta-three.vercel.app/" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"
+                            onload="iframeLoaded('load-automation-1')"
+                            onerror="iframeFailed('load-automation-1','fb-automation-1')">
+                        </iframe>
+                    </div>
+                    <div class="preview-fallback" id="fb-automation-1">
+                        <div class="preview-fallback-icon" style="background:rgba(56,189,248,0.12)">
+                            <i class="fas fa-envelope-open-text" style="color:#38bdf8"></i>
+                        </div>
+                        <p>Email Automation<br><span style="color:var(--accent);font-size:10px">Click Live Demo ↓</span></p>
+                    </div>
+                    <div class="preview-overlay"></div>
+                </div>
+                <div class="proj-body">
+                    <h3>Email Automation</h3>
+                    <p>AI-driven email automation tool that streamlines outreach, follow-ups, and personalized email workflows.</p>
+                    <div class="proj-tech"><span>AI Agents</span><span>Automation</span><span>Node.js</span></div>
+                    <a href="https://email-automation-eta-three.vercel.app/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+
+            <!-- Automation Project 2: AI Sales Lead Generator -->
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    <div class="preview-bar">
+                        <div class="preview-dot red"></div>
+                        <div class="preview-dot yellow"></div>
+                        <div class="preview-dot green"></div>
+                        <div class="preview-url">ai-sales-lead-generator.vercel.app</div>
+                    </div>
+                    <div class="preview-live-badge">LIVE</div>
+                    <div class="preview-loading" id="load-automation-2">
+                        <div class="preview-loading-spinner"></div>
+                        <span>Loading preview…</span>
+                    </div>
+                    <div class="preview-iframe-wrap">
+                        <iframe src="https://ai-sales-lead-generator.vercel.app/" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"
+                            onload="iframeLoaded('load-automation-2')"
+                            onerror="iframeFailed('load-automation-2','fb-automation-2')">
+                        </iframe>
+                    </div>
+                    <div class="preview-fallback" id="fb-automation-2">
+                        <div class="preview-fallback-icon" style="background:rgba(129,140,248,0.12)">
+                            <i class="fas fa-chart-line" style="color:#818cf8"></i>
+                        </div>
+                        <p>AI Sales Lead Generator<br><span style="color:var(--accent);font-size:10px">Click Live Demo ↓</span></p>
+                    </div>
+                    <div class="preview-overlay"></div>
+                </div>
+                <div class="proj-body">
+                    <h3>AI Sales Lead Generator</h3>
+                    <p>Automated lead generation platform that uses AI to identify, qualify, and organize potential sales prospects.</p>
+                    <div class="proj-tech"><span>AI Agents</span><span>Automation</span><span>React</span></div>
+                    <a href="https://ai-sales-lead-generator.vercel.app/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+
+            <!-- Automation Project 3: ZenithFlow -->
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    <div class="preview-bar">
+                        <div class="preview-dot red"></div>
+                        <div class="preview-dot yellow"></div>
+                        <div class="preview-dot green"></div>
+                        <div class="preview-url">ai-customer-support-agent-vc42.vercel.app</div>
+                    </div>
+                    <div class="preview-live-badge">LIVE</div>
+                    <div class="preview-loading" id="load-automation-3">
+                        <div class="preview-loading-spinner"></div>
+                        <span>Loading preview…</span>
+                    </div>
+                    <div class="preview-iframe-wrap">
+                        <iframe src="https://ai-customer-support-agent-vc42.vercel.app/" loading="lazy"
+                            sandbox="allow-scripts allow-same-origin"
+                            onload="iframeLoaded('load-automation-3')"
+                            onerror="iframeFailed('load-automation-3','fb-automation-3')">
+                        </iframe>
+                    </div>
+                    <div class="preview-fallback" id="fb-automation-3">
+                        <div class="preview-fallback-icon" style="background:rgba(52,211,153,0.12)">
+                            <i class="fas fa-headset" style="color:#34d399"></i>
+                        </div>
+                        <p>ZenithFlow — AI Customer Support<br><span style="color:var(--accent);font-size:10px">Click Live Demo ↓</span></p>
+                    </div>
+                    <div class="preview-overlay"></div>
+                </div>
+                <div class="proj-body">
+                    <h3>ZenithFlow | Premium AI Customer Support Platform</h3>
+                    <p>Premium AI-powered customer support platform that automates ticket handling, live chat, and query resolution.</p>
+                    <div class="proj-tech"><span>AI Agents</span><span>Automation</span><span>Customer Support</span></div>
+                    <a href="https://ai-customer-support-agent-vc42.vercel.app/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 </section>
 
 <!-- FREELANCE -->
@@ -1145,16 +1275,20 @@
     }
 
     // Auto-timeout fallback: if iframe doesn't load in 8s, show fallback
-    document.querySelectorAll('.preview-iframe-wrap iframe').forEach((iframe, i) => {
-        const loadId = 'load-' + (i + 1);
-        const fbId = 'fb-' + (i + 1);
-        setTimeout(() => {
-            const loader = document.getElementById(loadId);
-            if (loader && !loader.classList.contains('loaded')) {
-                iframeFailed(loadId, fbId);
-            }
-        }, 8000);
-    });
+    document.querySelectorAll('.preview-iframe-wrap iframe').forEach((iframe) => {
+    const wrap = iframe.closest('.project-preview');
+    const loader = wrap ? wrap.querySelector('.preview-loading') : null;
+    const fallback = wrap ? wrap.querySelector('.preview-fallback') : null;
+    const loadId = loader ? loader.id : null;
+    const fbId = fallback ? fallback.id : null;
+    if (!loadId || !fbId) return;
+    setTimeout(() => {
+        const l = document.getElementById(loadId);
+        if (l && !l.classList.contains('loaded')) {
+            iframeFailed(loadId, fbId);
+        }
+    }, 8000);
+});
 
     // ─── TYPING ───
     const texts = ['MERN Stack Developer','AI Engineer','Full Stack Developer','Problem Solver','Innovation Creator'];
